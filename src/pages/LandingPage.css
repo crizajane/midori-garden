@@ -1,0 +1,93 @@
+/* Full-screen landing section */
+.landing-section {
+  position: fixed; /* Make it fill the whole screen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(/public/lpb.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Main content box */
+.landing-content {
+  background: rgba(255, 255, 255, 0.25); /* translucent white */
+  backdrop-filter: blur(px); /* frosted glass blur */
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+  border-radius: 1rem;
+  padding: 2.5rem;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #1a1a1a;
+}
+
+
+/* Title */
+.landing-title {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #094b24; /* deep green */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 4px; 
+}
+
+/* Paragraph text */
+.landing-content p {
+  color: #000000;
+  font-family: 'Georgia', sans-serif;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+/* Button */
+.landing-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #16a34a;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.landing-btn:hover {
+  background-color: #15803d;
+  transform: scale(1.05);
+}
+
+/* 🌿 Mobile responsive */
+@media (max-width: 768px) {
+  .landing-content {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .landing-title {
+    font-size: 2rem;
+  }
+
+  .landing-content p {
+    font-size: 1rem;
+  }
+}
